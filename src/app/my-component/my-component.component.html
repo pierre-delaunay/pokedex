@@ -1,0 +1,20 @@
+<div style="text-align:center">
+
+
+    <h1>Hello World !</h1>
+    Binding : {{id}} <br>
+    <input [(ngModel)]="id">
+    <br>
+
+    Choose your pokemon : 
+    <br>
+    <select [(ngModel)]="selectedPokemon">
+      <option *ngFor='let pok of pokemons'>{{ pok.name }}</option>
+    </select>
+
+    <br>
+    Your pick : {{selectedPokemon}}
+
+    <button (click)="clickOnGo(selectedPokemon)">Go !</button>
+
+  </div>

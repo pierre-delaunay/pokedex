@@ -1,0 +1,14 @@
+<mat-toolbar color="primary">
+    <span>Pokédex</span>
+    <span class="example-spacer"></span>
+    <mat-icon aria-hidden="false" class="example-icon" aria-label="Example home icon">home</mat-icon>
+    <mat-icon aria-hidden="false" class="example-icon" aria-label="Example user verified icon">verified_user</mat-icon>
+    <mat-icon [matMenuTriggerFor]="menu" class="example-icon" aria-hidden="false" aria-label="Example settings icon">settings</mat-icon>
+  </mat-toolbar>
+
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item disabled>
+      <mat-icon>dialpad</mat-icon>
+      <span>Log in</span>
+    </button>
+  </mat-menu>
