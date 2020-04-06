@@ -5,14 +5,6 @@ export class Pokemon {
     url: string;
     imageURL: string;
 
-//    public getId(): string {
-//        return this.id;
-//    }
- 
-//    public getName() : string {
-//        return this.name;
-//    }
-
     static parse(data) {
         let pokemon = Object.assign(new Pokemon(), data);
         pokemon.getId();

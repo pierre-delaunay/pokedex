@@ -1,30 +1,30 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-
+import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MyComponentComponent } from './my-component/my-component.component';
 import { FormsModule } from '@angular/forms';
 import { FilterPokemonPipePipe } from './filter-pokemon--pipe.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { MatSliderModule } from '@angular/material/slider';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatListModule } from '@angular/material/list';
+
 import { HeaderComponent } from './header/header.component';
 import { SearchPokemonComponent } from './search-pokemon/search-pokemon.component';
-import { PokemonInfosComponent } from './pokemon-infos/pokemon-infos.component';
-
+import { PokemonDetailComponent } from './pokemon-detail/pokemon-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MyComponentComponent,
     FilterPokemonPipePipe,
     HeaderComponent,
     SearchPokemonComponent,
-    PokemonInfosComponent
+    PokemonDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -35,6 +35,8 @@ import { PokemonInfosComponent } from './pokemon-infos/pokemon-infos.component';
     MatToolbarModule,
     MatIconModule,
     MatMenuModule,
+    MatListModule,
+    HttpModule,
     HttpClientModule
   ],
   providers: [],

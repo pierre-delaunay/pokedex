@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Headers, Http, RequestOptions } from '@angular/http';
 import { Pokemon } from './pokemon';
-import 'rxjs/add/operator/toPromise';
-import 'rxjs/add/operator/map';
+import { map } from 'rxjs/operators';
+
 
 @Injectable({
   providedIn: 'root'

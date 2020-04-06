@@ -4,6 +4,9 @@
 
     Find by name : <br>
     <input [(ngModel)]="name">
-    <button (click)="get()">Get</button>
+    <button (click)="selectPokemon(name)">Get</button>
+    
+    <p *ngIf="errorMessage">{{ errorMessage }}</p>
+</div>
 
-  </div>
+<app-pokemon-detail *ngIf="selectedPokemon" [pokemon]="selectedPokemon"></app-pokemon-detail>
